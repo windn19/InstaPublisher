@@ -2,6 +2,8 @@ import requests
 import os.path
 import urllib3
 from pprint import pprint
+from instabot import Bot
+from PIL import Image
 
 
 def download_picture(url, path):
@@ -37,13 +39,23 @@ def fetch_hubble_image(id):
     download_picture(url_file, path=f'image/hubble{id}_{len(data) - 1}.{get_file_exc(url_file)}')
 
 
-# fetch_spacex_last_launch()
-urllib3.disable_warnings()
-url = 'http://hubblesite.org//api/v3/images/hubble_favorites_gallery'
-res = requests.get(url)
-res.raise_for_status()
-pprint(res.json())
-data = res.json()
-for id in data:
-    fetch_hubble_image(id['id'])
-    print(f"картинка {id} upload")
+if __name__=='__main__':
+    # image = Image.open('image/hubble4458_2.jpg')
+    # print(image.size)
+    # m = min(image.size)
+    # print(image.size)
+    # bot = Bot()
+    # bot.login(username="windn12", password="Rjydthn2019!")
+    # print(bot.upload_photo(photo='image/hubble4554_2.jpg', caption='Взрыв'))
+    # exit()
+    # fetch_spacex_last_launch()
+    urllib3.disable_warnings()
+    url = "http://hubblesite.org//api/v3/images/news"
+    res = requests.get(url)
+    res.raise_for_status()
+    pprint(res.json())
+    data = res.json()
+    pprint(data)
+    # for id in data:
+    #     fetch_hubble_image(id['id'])
+    #     print(f"картинка {id} upload")
