@@ -9,7 +9,7 @@ In case of conflict with Python2, use pip3:
 `` `
 pip install -r requirements.txt
 `` `
-###Using
+### Using
 A file named "input.txt" is expected in the root directory containing the names of the artists in Unicode.
 The result of the execution will be a list of the names of artists and their dates of birth, displayed in the console.
 
