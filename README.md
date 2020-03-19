@@ -9,7 +9,7 @@ Then use `pip` (or` pip3`, there is a conflict with Python2) to install the depe
 ```
 pip install -r requirements.txt
 ```
-At the root of the project, an .env file must exist with the following information:
+At the root of the project, an '.env' file must exist with the following information:
 ```
 INSTAGRAM_LOGIN = '[your Instagram login]'
 INSTAGRAM_PASSWORD = '[your password for Instagram login]'
