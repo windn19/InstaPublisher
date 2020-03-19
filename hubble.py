@@ -1,5 +1,4 @@
 import requests
-from pprint import pprint
 from prepare_file import download_picture, get_file_exc
 
 
