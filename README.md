@@ -17,4 +17,4 @@ INSTAGRAM_PASSWORD = '[your password for Instagram login]'
 
 ### Objective of the project
 
-The code is written for educational purposes on the online course for web developers [dvmn.org] (https://dvmn.org/).
+The code is written for educational purposes on the online course for web developers [dvmn.org](https://dvmn.org/).

@@ -7,6 +7,5 @@ def fetch_spacex_last_launch():
     res.raise_for_status()
     data = res.json()
     images = data['links']['flickr_images']
-    for num, image in enumerate(images[:1]):
+    for num, image in enumerate(images):
         download_picture(url=image, path=f'image/spaceX{(num + 1)}.{get_file_exc(image)}')
-        print(f'File {image}')
